@@ -46,6 +46,9 @@ public class MainActivity extends AppCompatActivity {
                 Intent iSettings = new Intent(this, ActivitySettings.class);
                 startActivity(iSettings);
                 break;
+            case R.id.mRefresh:
+                Toast.makeText(this, "Refresh", Toast.LENGTH_LONG).show();
+                break;
         }
 
         return super.onOptionsItemSelected(item);
